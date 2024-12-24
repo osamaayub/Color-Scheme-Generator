@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/palette-solid.svg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="color-input-section">
+            <input type="color" name="color-input" id="color-input">
+            <select name="color-scheme" id="color-scheme">
+                <option value="monochrome">monochrome</option>
+                <option value="monochrome-dark">monochrome-dark</option>
+                <option value="monochrome-light">monochrome-light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic-complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>
+            </select>
+            <button id="get-color-scheme">Get Color Scheme</button>
+        </section>
+
+        <section class="color-section">
+            <div class="color-display-section">
+                <div class="color-display"></div>
+                <p class="hex-display"></p>
+            </div>
+            <div class="color-display-section">
+                <div class="color-display"></div>
+                <p class="hex-display"></p>
+            </div>
+            <div class="color-display-section">
+                <div class="color-display"></div>
+                <p class="hex-display"></p>
+            </div>
+            <div class="color-display-section">
+                <div class="color-display"></div>
+                <p class="hex-display"></p>
+            </div>
+            <div class="color-display-section">
+                <div class="color-display"></div>
+                <p class="hex-display"></p>
+            </div>
+        </section>
+
+        <section class="message-container">
+            <p class="message">Click on the color/hex value to Copy to Clipboard</p>
+        </section>
+    </main>
+</body>
+</html>
